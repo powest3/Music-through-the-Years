@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<body lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Music Through the Years</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+
+    
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  </link>
+
+  <body>
+    <div class="jumbotron">
+      <img src="{{ url_for('static', filename='images/banner2.jpg') }}" , class="img-fluid"></img>
+      <h1 style="padding:0 500px"> Music Through the Years</h1>
+      <h2 style="padding:0 420px">An Analysis of #1 Hit Song Lyrics by Artist</h2>
+      <h6>Vectors courtesy of:</h6> <a href="https://www.vecteezy.com/"> Vectors by Vecteezy</a>
+
+    </div>
+
+    <div class="container">
+    
+      <div id="carouselSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{{ url_for('static', filename='images/music-a.jpg') }}">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{{ url_for('static', filename='images/music-1g.jpg') }}">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{{ url_for('static', filename='images/music-c.jpg') }}">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{{ url_for('static', filename='images/music-5a.jpg') }}">
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <h2> Overview</h2>
+    <h4> This site examines the Billboard Hot 100 charts from 1958 and analyzes the lyrics and artists of the top songs
+      to determine trends.<br><br></h4>
+
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+
+
+
+    <h3 style="padding:0 400px;">Click on any of the icons below to start exploring <br>
+      <b<b><br>
+    </h3>
+    <a href="Song.html"><img style="padding:0 50px;"id="song" src="{{ url_for('static', filename='images/Song.PNG') }}" , class="img-fluid"></img></a>
+    <a href="Artist.html"><img id ="artist" src="{{ url_for('static', filename='images/Artist.PNG') }}" , class="img-fluid"></img> </a>
+    <a href="History.html"><img style="padding:0 75px;" id ="History" src="{{ url_for('static', filename='images/History.PNG') }}" , class="img-fluid"></img></a>
+    <a href="Artist-Comp.html"><img id ="artist1" src="{{ url_for('static', filename='images/artist1.PNG') }}" , class="img-fluid"></img> </a>
+    <a href="Artist-Comp.html"><img id ="artist2" src="{{ url_for('static', filename='images/artist2.PNG') }}" , class="img-fluid"></img> </a>
+
+    <div class="row">
+      <h4 style="padding:0 90px;">Song Summary</h4>
+      <h4 style="padding:0 40px;">Artist Summary</h4>
+      <h4 style="padding:0 110px;">Historical Influence</h4>
+      <h4>Artist Comparison</h4>
+    </div>
+
+
+
+
+
+
+  </body>
+
+  </html>
