@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Music Through the Years</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+
+  <body>
+    <!-- Creates the Overall Grid -->
+
+    <nav class="navbar navbar-expand-lg navbar-white">
+      <a class="navbar-brand" href="Index.html"> <span>Home </span> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="nav navbar-nav navbar ml">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Song.html">Song Analysis</a>
+              <a class="dropdown-item" href="Artist.html">Artist Analysis</a>
+              <a class="dropdown-item" href="History.html">Historical Influence</a>
+              <a class="dropdown-item" href="Artist-Comp.html">Artist Comparison</a>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <img src="{{ url_for('static', filename='images/banner2.jpg') }}" , class="img-fluid"></img>
+      <h1 style="padding:0 500px"> Music Through the Years</h1>
+      <h2 style="padding:0 420px">An Analysis of #1 Hit Song Lyrics by Artist</h2>
+      <h6>Vectors courtesy of:</h6> <a href="https://www.vecteezy.com/"> Vectors by Vecteezy</a>
+
+      <img style="padding:0 650px;" id="song2" src="{{ url_for('static', filename='images/song2.png') }}" ,
+        class="img-fluid"></img>
+      <h3 style="padding:0 550px">General Song Analysis</h3>
+
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-md-4 col-sm-12">
+
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="well">
+          <span>Choose the year the song was published</span>
+          <select style="padding:0 20px" id="selYear" onchange="optionChanged(this.value)"></select>
+        </div>
+      </div>
+      <!-- <div class="col-md-4 col-sm-12">
+        <div class="dropdown-text-center">
+          <h4>Choose the number of weeks at #1</h4>
+          <select id="selWeeks" onchange="optionChanged(this.value)">
+            <option value="1-4">1 to 4</option>
+            <option value="5-9">5 to 9</option>
+            <option value="10-12">10 to 12</option>
+            <option value=">12">Greater than 12</option>"
+
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="dropdown-text-center">
+          <h4>Choose the lyric count of the song</h4>
+          <select id="selLyricsCount" onchange="optionChanged(this.value)">
+            <option value="100-150">100 to 150</option>
+            <option value="151-200">151 to 200</option>
+            <option value="201-250">201 to 250</option>
+            <option value=">250">Greater than 250</option>"
+
+          </select>
+        </div>
+      </div> -->
+    </div>
+    
+    <br>
+    <br>
+    <br>
+
+
+
+    
+    <div class="roundedbox">
+      <h2 style="padding:0 600px">Visualizations</h2>
+      <br>
+      <br>
+      <br>
+
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="box-content">
+          <select id="selDataset" onchange="getData(this.value)">
+            <option value="the1960s">1960s</option>
+            <option value="the1970s">1970s</option>
+            <option value="the1980s">1980s</option>
+            <option value="the1990s">1990s</option>
+            <option value="the2000s">2000s</option>
+            <option value="the2010s">2010s</option>
+            <option value="alltime">All Time</option>
+            </select>
+
+
+          <!-- <h2>Visualizations</h2> -->
+          <!-- <div class="row"> -->
+
+              <div id="Chart1">  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box-content-2">
+          <div id="Chart2">
+          </div>
+          <div id="Chart2b">
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
+
+  </body>
+
+  </div>

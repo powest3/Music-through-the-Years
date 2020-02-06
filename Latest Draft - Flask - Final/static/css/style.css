@@ -1,0 +1,190 @@
+html, body{
+  height:100%
+  margins:0px;
+ }
+
+object{
+  width:800px;
+  height:1000px;
+}
+
+.full-height{
+ height:100%;
+ margin:0;
+}
+
+
+.box-content{
+  background-color: white;
+  width:700px;
+  height:1000px;
+  margin-left:50px;
+  }
+
+.box-content-2{
+  background-color: white;
+  height:1000px;
+  width:700px;
+  margin-left:30px;
+   
+  }
+span{
+  background-color: rgb(17, 185, 185);
+  color:white;
+  font-size:28px;
+  font-style:strong;
+}
+
+.roundedbox{
+    background: #fff;
+    width: 1450px;
+    height: 50px;
+    border-radius: 24px;
+    margin-left:70px;
+    margin-bottom:50px;
+}
+
+
+
+.navbar{
+  background-color: white
+}
+
+  @media (max-width: 600px){
+    .navbar li{
+      float:left;
+      visibility:visible;
+    }
+
+    
+    .navbar{
+      background: rgb(17, 185, 185);
+;
+    }
+  }
+body{
+  background-color:rgb(162, 224, 224);
+  background-image:url(../images/music-1f.jpg);
+  
+}
+
+h2{
+  border-bottom: 0.1px solid lightslategray;
+  padding-bottom:30px;
+}
+
+/* img{
+  fill:lightgrey;
+  }
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  grid-template-rows:repeat(1, 5vw);
+  grid-gap:10px;
+}
+
+.gallery__img{
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+  }
+
+.gallery__item--1{
+  grid-column-start: 8;
+  grid-column-end:10;
+  grid-row-start:1;
+  grid-row-end:4;
+}
+
+.gallery__item--2{
+  grid-column-start: 10;
+  grid-column-end:12;
+  grid-row-start:1;
+  grid-row-end:4;
+}
+
+.gallery__item--3{
+  grid-column-start: 8;
+  grid-column-end:10;
+  grid-row-start:4;
+  grid-row-end:7;
+}
+
+.gallery__item--4{
+  grid-column-start: 10;
+  grid-column-end:12;
+  grid-row-start:4;
+  grid-row-end:7;
+}
+
+.gallery__item--5{
+  grid-column-start: 1;
+  grid-column-end:6;
+  grid-row-start:1;
+  grid-row-end:4;
+}
+
+.gallery__item--6{
+  grid-column-start: 7;
+  grid-column-end:12;
+  grid-row-start:1;
+  grid-row-end:4;
+}
+
+.gallery__item--7{
+  grid-column-start: 1;
+  grid-column-end:6;
+  grid-row-start:4;
+  grid-row-end:7;
+}
+
+.gallery__item--8{
+  grid-column-start: 7;
+  grid-column-end:12;
+  grid-row-start:4;
+  grid-row-end:7;
+} */
+
+/*  FROM DART change this from `span` to a class so that this formatting
+    does not apply to every `span` tag. It would be better to change
+    this to a class
+
+    I changed this from `span` to .navbar-button
+*/
+.navbar-button {
+  background:rgb(17, 185, 185);
+  font-size:40;
+  color:white;
+}
+
+nav ul li{
+  float:right;
+}
+
+.collapse navbar-collapse navbar-nav mr-auto nav-item{
+  text-align: right;
+}
+
+p{
+  text-align: justify;
+}
+
+h2{
+  color:rgb(17, 185, 185)
+}
+
+section{
+  float:left;
+  padding-left:1500;
+  padding-top:-6000;
+}
+
+textarea{
+  height:30;
+  float:right;
+  font-size:10;
+  width:30%;
+  text-align: right;
+  border:none
+} 
+  
